@@ -15,7 +15,7 @@ class Form extends React.Component {
 
   handleFormSubmit = e => {
     e.preventDefault();
-    axios({
+    axios.post({
       method: "post",
       url: 'https://stupefied-davinci-c212eb.netlify.com/api/contact/index.php',
       headers: { "content-type": "application/json" },

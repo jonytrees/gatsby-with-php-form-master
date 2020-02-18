@@ -24,7 +24,7 @@ class Form extends React.Component {
   */
   handleFormSubmit = e => {
     e.preventDefault();
-    export default axios({
+    axios.post({
       method: "post",
       url: '../../api/contact/index.php',
       headers: { "content-type": "application/json" },
