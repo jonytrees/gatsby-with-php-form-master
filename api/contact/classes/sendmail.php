@@ -3,6 +3,7 @@
  * @class Sender
  * This is used to send email via react contact from component
  */
+ 
 class Sender
 {
     public $sendTo;
