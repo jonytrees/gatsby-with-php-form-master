@@ -26,7 +26,7 @@ class Form extends React.Component {
     e.preventDefault();
     axios({
       method: "post",
-      url: 'https://stupefied-davinci-c212eb.netlify.com/api/contact/index.php',
+      url: '/api/contact/index.php',
       headers: { "content-type": "application/json" },
       data: this.state
     })
@@ -61,7 +61,7 @@ class Form extends React.Component {
       <div className="form-wrapper">
         <h2>{title}</h2>
         <div>
-          <form action="#">
+          <form action="#" method="POST">
             {fieldsConfig &&
               fieldsConfig.map(field => {
                 return (
