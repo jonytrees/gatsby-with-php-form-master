@@ -24,7 +24,7 @@ class Form extends React.Component {
     e.preventDefault();
     axios({
       method: "post",
-      url: 'https://5e4bc04f8328d1654e2499d8--elated-khorana-b39b5e.netlify.com/api/contact/index.php',
+      url: 'https://stupefied-davinci-c212eb.netlify.com/api/contact/index.php',
       headers: { "content-type": "application/json" },
       data: this.state
     })
