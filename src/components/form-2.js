@@ -9,7 +9,7 @@ class Form extends React.Component {
     this.state = {
       mailSent: false,
       error: null,
-      
+
     };
   }
 
@@ -17,7 +17,7 @@ class Form extends React.Component {
     e.preventDefault();
     axios({
       method: "post",
-      url: 'https://testpage2.frankagathos.com/api/contact/index.php',
+      url: 'https://5e4bc04f8328d1654e2499d8--elated-khorana-b39b5e.netlify.com/api/contact/index.php',
       headers: { "content-type": "application/json" },
       data: this.state
     })
@@ -48,7 +48,7 @@ class Form extends React.Component {
     return (
       <div className="form-wrapper">
         <h2>Contact Form 2</h2>
-      
+
         <div>
           <form action="#">
           {/* Name */}
@@ -69,7 +69,7 @@ class Form extends React.Component {
                           onChange={e => this.handleChange(e, 'lastName')}
                           required
                         />
-    
+
 
                         {/* Email */}
             <label>Email</label>
@@ -80,12 +80,12 @@ class Form extends React.Component {
                           onChange={e => this.handleChange(e,"email" )}
                           required
                         />
-    
+
 
             <input type="submit" onClick={e => this.handleFormSubmit(e)} value="Submit" />
 
             <div>
-             
+
               {this.state.mailSent && <div className="success">success</div>}
               {this.state.error && <div className="error">Error</div>}
             </div>
